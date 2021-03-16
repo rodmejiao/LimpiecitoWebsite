@@ -1,0 +1,19 @@
+:root {
+    --colorPrimary: #e6f4f1;
+    --colorSecundary: #00205d;
+  }
+
+  * {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  .parent{
+      height: 100vh;
+      width: 100%;
+      display: grid;
+      grid-template-rows: 50px 1fr 1fr 100px;
+      
+  }
+
