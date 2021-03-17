@@ -1,5 +1,6 @@
 :root {
     --colorPrimary: #e6f4f1;
+    --colorPrimary: #ebfaff;
     --colorSecundary: #00205d;
   }
 
@@ -13,7 +14,7 @@
       height: 100vh;
       width: 100%;
       display: grid;
-      grid-template-rows: 80px repeat(5,1fr) 100px; 
+      grid-template-rows: 80px repeat(6,1fr); 
   }
 
   header{
@@ -72,14 +73,66 @@
          background-color: var(--colorPrimary);
      }
 
+     footer h2 {
+         width: 100%;
+         text-align: center;
+        padding: 20px 0;
+        font-family:  'EB Garamond', serif;
+        font-weight: 500;
+        font-size: 25px;
+        color: #323333;
+     }
+
+
+
      footer div{
          width: 100%;
-         height: 33%;
          display: flex;
          justify-content: center;
      }
 
+
+     .social-media{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         width: 40%;
+         height: 60px;
+     }
+
+
+     .social-media a{
+         color: var(--colorSecundary);
+         font-size: 30px;
+         cursor:pointer;
+
+     }
+
+
+     .personal-contact{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         height: 70px;
+         margin-bottom: 20px;
+     }
+
+     .personal-contact a{
+         width: 100%;
+         text-align: center;
+        text-decoration: none;
+        color: #323333;
+        font-family:  'EB Garamond', serif;
+        font-weight: 500;
+        font-size: 17px;
+     }
+
+
+
+
      .credits{
+        
         display: flex;
         align-items: center;
          background-color: var(--colorSecundary);
@@ -88,9 +141,6 @@
          font-weight: 500;
          font-size: 12px;
      }
-
-
-
 
      .credits a{
          color: #AF8D00;
