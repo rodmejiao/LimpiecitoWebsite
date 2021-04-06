@@ -79,6 +79,8 @@
         font-weight: 500;
         font-size: 25px;
         color: #323333;
+        width: 100%;
+        text-align: center;
      }
 
      .product article{
@@ -91,6 +93,8 @@
         border-radius: 10px;
         margin: 15px;
         box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
+        min-width: 280px;
+        max-width: 400px;
      }
 
      .product article h3{
