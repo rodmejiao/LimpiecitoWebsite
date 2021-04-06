@@ -13,6 +13,7 @@
   .parent{
       height: 100vh;
       width: 100%;
+      min-width: 320px;
       display: grid;
       grid-template-rows: 80px repeat(6,1fr); 
   }
@@ -62,6 +63,60 @@
          color:var(--colorSecundary) ;
          font-size: 24px;
      }
+
+
+
+     .product{
+
+        font-family: 'EB Garamond', serif;
+        font-size: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+
+     .product h2{
+        font-weight: 500;
+        font-size: 25px;
+        color: #323333;
+     }
+
+     .product article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #ebfaff;
+        --border: 1px solid #3a6ccc;
+        border-radius: 10px;
+        margin: 15px;
+        box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
+     }
+
+     .product article h3{
+        font-size: 20px;
+        font-weight:600 ;
+        color: #323333;
+        margin-top: 20px;
+     }
+     
+
+     .product ul{
+        list-style: none;
+        padding: 20px;
+     }
+
+     .product li{
+        list-style: none;
+        padding: 5px 0px;
+     }
+
+     .product li::before{
+         content: "*" ;
+         font-size: 17px;
+         color: #00205d;
+     }
+
 
 
      
