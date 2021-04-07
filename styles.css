@@ -120,7 +120,33 @@
          font-size: 17px;
          color: #00205d;
      }
+     
 
+
+     .opinion{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+
+     }
+
+     .opinion h2{
+        font-weight: 500;
+        font-size: 25px;
+        color: #323333;
+        width: 100%;
+        text-align: center;
+        line-height: 70px;
+     }
+
+     .wave{
+         content: url(./assets/icons/wave.svg);
+         width: 100%;
+     }
+
+     .opinion_item{
+         min-width: 260px;
+     }
 
 
      
