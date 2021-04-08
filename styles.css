@@ -137,7 +137,8 @@
         color: #323333;
         width: 100%;
         text-align: center;
-        line-height: 70px;
+        line-height: 45px;
+        margin: 20px 0;
      }
 
      .wave{
@@ -176,7 +177,6 @@
      }
 
      .Caracteristicas p{
-
         color: #323333;
         font-family:  'EB Garamond', serif;
         font-weight: 500;
