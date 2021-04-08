@@ -144,6 +144,7 @@
      .wave{
          content: url(./assets/icons/wave.svg);
          width: 100%;
+         height: 75px;
      }
 
      .opinion_item{
