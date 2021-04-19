@@ -16,6 +16,7 @@
       min-width: 320px;
       display: grid;
       grid-template-rows: 80px repeat(6,1fr); 
+      position: relative;
   }
 
   header{
@@ -64,7 +65,49 @@
          font-size: 24px;
      }
 
+     .exit-menu-icon{
+         position: absolute;
+         font-size: 30px;
+         top: 30px;
+         right: 30px;
+         cursor: pointer;
+     }
 
+     .menu-items{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--colorSecundary);
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.9;
+        color: white;
+        font-size: 23px;
+     }
+
+     .menu-items ul{
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+     }
+
+
+     
+     .menu-items ul li{
+       cursor: pointer;
+     }
+     
+     .menu-items ul li a{
+        text-decoration: none;
+        color: white;
+      }
 
      .hero{
          width: 100%;
