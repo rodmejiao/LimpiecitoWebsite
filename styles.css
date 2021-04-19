@@ -78,7 +78,7 @@
      }
 
      .menu-items{
-       --display: none;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -114,9 +114,7 @@
       }
 
 
-      .contactenos:checked{
-          display: none;
-      }
+
 
 
      .hero{
