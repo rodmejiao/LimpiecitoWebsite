@@ -23,6 +23,17 @@
       position: relative;
   }
 
+  .whatsapp{
+      content: url('./assets/icons/whatsapp.svg');
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+  }
+
+
+
   header{
       width: 100%;
       height: 100%;
