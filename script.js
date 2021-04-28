@@ -2,9 +2,22 @@
 function myFunction(x) {
     if (x.matches) { // If media query matches
 
+/* 
+        let fbpost = document.getElementsByClassName("fb-post")
+        console.log(fbpost)
+
+        for (let index = 0; index < fbpost.length; index++) {
+            let element = fbpost[index];
+            element.setAttribute('data-width','500')
+           
+            
+        } */
+
 
         document.querySelectorAll(".menu-items")[0].style.display='block'
         document.querySelectorAll(".menu-icon")[0].style.display='none'
+          
+
 
         const item = document.querySelectorAll(".item-link");
         
@@ -18,6 +31,19 @@ function myFunction(x) {
     
          
     } else {
+
+/* 
+        let fbpost = document.getElementsByClassName("fb-post")
+        console.log(fbpost)
+
+        for (let index = 0; index < fbpost.length; index++) {
+            let element = fbpost[index];
+            element.setAttribute('data-width','300')
+           
+            
+        }
+
+ */
         document.querySelectorAll(".menu-items")[0].style.display='none'
         document.querySelectorAll(".menu-icon")[0].style.display='block'        
 
