@@ -248,6 +248,7 @@
      .opinion{
          display: flex;
          flex-wrap: wrap;
+         flex-direction: column;
          justify-content: center;
          max-width: 1024px;
          padding-top: 100px;
@@ -270,7 +271,7 @@
      }
   */
      .opinion_item{
-         margin: 20px 0;
+         margin: 10px 0;
      } 
 
 
@@ -397,10 +398,16 @@
      }
 
 
-     .fb-post.sizeadjust{
+/*      .fb-post.sizeadjust{
          width: 100px;
-     }
+     } */
 
+     @media screen and (min-width:720px) {
+        .fb-post.sizeadjust{
+            width: 500px;
+            text-align: center;
+        } 
+    }
 
      @media screen and (min-width:1024px) {
         .menu{
@@ -466,9 +473,9 @@
         display: none;
     }
 
-/*     .fb-post.sizeadjust{
+    .fb-post.sizeadjust{
         width: 500px;
         text-align: center;
-    } */
+    } 
 
      }
