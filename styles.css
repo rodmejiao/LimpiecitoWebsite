@@ -153,6 +153,28 @@
          margin-top: 80px;
      }
 
+
+     .history{
+         margin-top: 100px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         padding: 10px 10px;
+         max-width: 1024px;
+     }
+
+     .history h1,h2{
+         padding: 15px 0px;
+     }
+
+     .history p{
+         padding: 15px 0px;
+     }
+
+
+
      .likes{
         width: 100%;
        
