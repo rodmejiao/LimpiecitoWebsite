@@ -103,8 +103,8 @@
         top: 0;
         left: 0;
         background: var(--colorSecundary);
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         opacity: 0.9;
         color: white;
         font-size: 23px;
@@ -161,12 +161,15 @@
          justify-content: center;
          align-items: center;
          text-align: center;
-         padding: 10px 10px;
+         padding-left:  10px;
+         padding-right: 10px;
+         padding-top: 100px;
          max-width: 1024px;
      }
 
      .history h1,h2{
          padding: 15px 0px;
+         color: var(--colorSecundary);
      }
 
      .history p{
@@ -222,7 +225,7 @@
      .product h2{
         font-weight: 500;
         font-size: 25px;
-        color: #323333;
+        color: var(--colorSecundary);
         width: 100%;
         text-align: center;
      }
@@ -246,7 +249,23 @@
         font-weight:600 ;
         color: #323333;
         margin-top: 20px;
+        vertical-align: middle;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 20px;
      }
+
+     .product article h3::after{
+        font-family: "Font Awesome 5 Free";
+        content: '\f078';
+        font-size: 20px;
+        margin-left: auto;
+        color: var(--colorSecundary);
+     }
+ 
+
      
 
      .product ul{
@@ -280,7 +299,7 @@
      .opinion h2{
         font-weight: 500;
         font-size: 25px;
-        color: #323333;
+        color: var(--colorSecundary);
         width: 100%;
         text-align: center;
         line-height: 45px;
@@ -347,7 +366,7 @@
         font-family:  'EB Garamond', serif;
         font-weight: 500;
         font-size: 25px;
-        color: #323333;
+        color: var(--colorSecundary)
      }
 
 
