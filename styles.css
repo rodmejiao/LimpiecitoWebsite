@@ -242,6 +242,9 @@
         box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
         min-width: 280px;
         max-width: 400px;
+
+        min-height: 50px;
+        height: 300px;
      }
 
      .product article h3{
@@ -256,6 +259,7 @@
         width: 100%;
         padding-left: 10%;
         padding-right: 20px;
+        align-self: flex-start;
      }
 
      .product article h3::after{
