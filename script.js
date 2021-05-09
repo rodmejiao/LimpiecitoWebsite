@@ -1,18 +1,46 @@
 
+function ProductDown() {
+
+    const itemProducts = document.querySelectorAll(".title-article");
+    console.log('productazos: ',itemProducts)     
+    let items=[]
+
+    for (let i = 0; i < itemProducts.length; i++) {  
+        items.push(itemProducts[i].dataset.item)
+    }
+
+    console.log('data items: ',items)
+
+    for (let i = 0; i < itemProducts.length; i++) {  
+       let itemsclose=items.filter((value,index,array)=> {return value != i})   
+       console.log("el valor de i es:", i)
+       console.log("item no dentro de i",itemsclose)  
+
+        itemProducts[i].addEventListener("click", function() {
+           document.querySelectorAll(".product-article")[i].style.height='300px'
+           for (let index = 0; index < itemsclose.length; index++) {
+               let value=itemsclose[index]
+            document.querySelectorAll(".product-article")[value].style.height='80px'              
+           }
+
+        });
+
+
+        
+
+
+
+    }    
+}
+
+
+
+
+
 function myFunction(x) {
     if (x.matches) { // If media query matches
 
-/* 
-        let fbpost = document.getElementsByClassName("fb-post")
-        console.log(fbpost)
-
-        for (let index = 0; index < fbpost.length; index++) {
-            let element = fbpost[index];
-            element.setAttribute('data-width','500')
-           
-            
-        } */
-
+ 
 
         document.querySelectorAll(".menu-items")[0].style.display='block'
         document.querySelectorAll(".menu-icon")[0].style.display='none'
@@ -28,27 +56,27 @@ function myFunction(x) {
             });
         } 
 
-    
+        const itemProducts = document.querySelectorAll(".title-article");   
+        for (let i = 0; i < itemProducts.length; i++) {  
+            document.querySelectorAll(".product-article")[i].style.height='300px'
+            };       
+
+
+
          
     } else {
 
-/* 
-        let fbpost = document.getElementsByClassName("fb-post")
-        console.log(fbpost)
+        ProductDown();
+/*         const itemProducts = document.querySelectorAll(".title-article");   
+        for (let i = 0; i < itemProducts.length; i++) {  
+            document.querySelectorAll(".product-article")[i].style.height='300px'
+            }; */
 
-        for (let index = 0; index < fbpost.length; index++) {
-            let element = fbpost[index];
-            element.setAttribute('data-width','300')
-           
-            
-        }
 
- */
         document.querySelectorAll(".menu-items")[0].style.display='none'
         document.querySelectorAll(".menu-icon")[0].style.display='block'        
 
         document.querySelectorAll(".menu-icon")[0].addEventListener("click", function(){
-            console.log('funciona');
         
             document.querySelectorAll(".menu-items")[0].style.display='block'
             document.querySelectorAll(".menu-icon")[0].style.display='none'
@@ -57,9 +85,7 @@ function myFunction(x) {
         })
         
         
-        document.querySelectorAll(".exit-menu-icon")[0].addEventListener("click", function(){
-            console.log('funciona');
-        
+        document.querySelectorAll(".exit-menu-icon")[0].addEventListener("click", function(){        
             document.querySelectorAll(".menu-items")[0].style.display='none'
             document.querySelectorAll(".menu-icon")[0].style.display='block'
         
@@ -79,11 +105,11 @@ function myFunction(x) {
     }
   }
   
+
+
+
   var x = window.matchMedia("(min-width: 1024px)")
   myFunction(x) // Call listener function at run time
   x.addEventListener("change", () => {
    myFunction(x);
 });
-
-
-

@@ -242,10 +242,18 @@
         box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
         min-width: 280px;
         max-width: 400px;
-
-        min-height: 50px;
-        height: 300px;
+       
      }
+
+
+     .title-article{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+     }
+
 
      .product article h3{
         font-size: 20px;
@@ -256,20 +264,20 @@
         vertical-align: middle;
         text-align: center;
         display: flex;
-        width: 100%;
+        width: 70%;
         padding-left: 10%;
         padding-right: 20px;
         align-self: flex-start;
      }
 
-     .product article h3::after{
+/*      .product article h3::after{
         font-family: "Font Awesome 5 Free";
         content: '\f078';
         font-size: 20px;
         margin-left: auto;
         color: var(--colorSecundary);
      }
- 
+  */
 
      
 
